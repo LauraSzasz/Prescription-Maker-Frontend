@@ -1,10 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {Medicine} from "../models/medicine";
-import {MedicinesService} from "../service/medicines.service";
-import {HttpErrorResponse} from "@angular/common/http";
-import {Router} from "@angular/router";
-import Swal from "sweetalert2";
-import { style } from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
+import { Medicine } from '../../models/medicine';
+import { MedicinesService } from '../../service/medicines.service';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-medicines',
@@ -15,9 +14,6 @@ export class MedicinesComponent implements OnInit {
 
   public medicine!: Medicine;
   public medicines!: Medicine[];
-  public deleteMedicine!: Medicine;
-  public counter = 0;
-
 
   constructor(private medicineService: MedicinesService,
               private  router: Router) {
@@ -27,10 +23,6 @@ export class MedicinesComponent implements OnInit {
     this.getMedicines();
   }
 
-  public getCounter(): number {
-return this.counter++;
-  }
-
   private getMedicines() {
     this.medicineService.getMedicines().subscribe(data => {
       this.medicines = data;
@@ -38,7 +30,7 @@ return this.counter++;
   }
 
   updateMedicine(id: number) {
-    this.router.navigate(['edit/:id', id])
+    this.router.navigate(['edit/', id])
   }
 
   public onDeleteMedicine(id: number): void {
@@ -76,6 +68,5 @@ return this.counter++;
       }
     })
   }
-
 
 }

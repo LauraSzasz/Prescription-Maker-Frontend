@@ -6,10 +6,10 @@ import {ReactiveFormsModule} from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MedicinesComponent } from './medicines/medicines.component';
-import { AddMedicineComponent } from './medicines/add-medicine/add-medicine.component';
-import { EditMedicineComponent } from './medicines/edit-medicine/edit-medicine.component';
+import { NavbarComponent } from './compoments/navbar/navbar.component';
+import { MedicinesComponent } from './pages/medicines/medicines.component';
+import { AddMedicineComponent } from './pages/add-medicine/add-medicine.component';
+import { EditMedicineComponent } from './pages/edit-medicine/edit-medicine.component';
 import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
 
 @NgModule({

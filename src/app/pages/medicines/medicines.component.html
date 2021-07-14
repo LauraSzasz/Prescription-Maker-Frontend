@@ -1,7 +1,7 @@
 <br>
 <br>
 <div class="container">
-  <button class="btn btn-outline-success" id = "addButton"routerLink="/add-medicine"><img class="icon" id="addIcon" src="../../assets/plus-lg.svg"></button>
+  <button class="btn btn-outline-success" id = "addButton"routerLink="/add-medicine"><img class="icon" id="addIcon" src="../../../assets/plus-lg.svg"></button>
 <br>
 <br>
 <table class="table table-hover">
@@ -18,8 +18,8 @@
   </thead>
   <tbody>
 
-  <tr id="tableRows" *ngFor="let medicine of medicines" >
-    <th scope="row">{{medicine.id}}</th>
+  <tr id="tableRows" *ngFor="let medicine of medicines; let i = index" >
+    <th scope="row">{{ i + 1}}</th>
     <td>{{medicine.brandName}}</td>
     <td>{{medicine.chemicalName}}</td>
     <td>{{medicine.administrationMethod}}</td>
@@ -27,8 +27,8 @@
     <td>{{medicine.quantity}}</td>
 
     <td>
-      <button class="btn btn-outline-warning" (click)="updateMedicine(medicine.id)" ><img class="icon" id="editIcon" src="../../assets/pencil-fill.svg"></button>&nbsp;
-      <button class="btn btn-outline-danger" (click)="openDelete(medicine.id)"><img class="icon" id="deleteIcon" src="../../assets/trash-fill.svg"></button>
+      <button class="btn btn-outline-warning" (click)="updateMedicine(medicine.id)" ><img class="icon" id="editIcon" src="../../../assets/pencil-fill.svg"></button>&nbsp;
+      <button class="btn btn-outline-danger" (click)="openDelete(medicine.id)"><img class="icon" id="deleteIcon" src="../../../assets/trash-fill.svg"></button>
 
     </td>
   </tr>

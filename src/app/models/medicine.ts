@@ -1,4 +1,4 @@
-import {AdministrationMethod} from "./administration-method";
+import {AdministrationMethod} from './enums/administration-method';
 
 export class Medicine {
   id!: number;
