@@ -1,0 +1,27 @@
+<br>
+<h3 class="subtitle">Edit medicine</h3>
+<br>
+<div class="container" class="formContainer">
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="brandName" class="form-label">Brand name:</label>
+      <input name="brandName" type="text" class="form-control" id="brandName" aria-describedby="brandNameHelp"
+             [(ngModel)]="medicine.brandName">
+      <div id="brandNameHelp" class="form-text">Ex: Omez 10mg</div>
+    </div>
+    <div class="mb-3">
+      <label for="chemicalName" class="form-label">Chemical name:</label>
+      <input name="chemicalName" type="text" class="form-control" id="chemicalName" aria-describedby="chemicalName"
+             [(ngModel)]="medicine.chemicalName">
+      <div id="chemicalNameHelp" class="form-text">Ex: Omeprazolum</div>
+    </div>
+    <select name="administrationMethod" class="form-select" aria-label="administrationMethodSelect" [(ngModel)]="medicine.administrationMethod">
+      <option selected>{{medicine.administrationMethod}}</option>
+      <option *ngFor="let method of administrationMethod">{{method}}</option>
+    </select>
+    <br>
+    <div class="formButton">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+</div>

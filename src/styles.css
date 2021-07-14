@@ -1,0 +1,13 @@
+.formContainer{
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: thin solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  background: #e8eef3;
+}
+
+.formButton{
+  text-align: center;
+}
