@@ -10,7 +10,6 @@ import { NavbarComponent } from './compoments/navbar/navbar.component';
 import { MedicinesComponent } from './pages/medicines/medicines.component';
 import { AddMedicineComponent } from './pages/add-medicine/add-medicine.component';
 import { EditMedicineComponent } from './pages/edit-medicine/edit-medicine.component';
-import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,8 @@ import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
     MedicinesComponent,
     AddMedicineComponent,
     EditMedicineComponent,
-    EnumToArrayPipe
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,6 +27,7 @@ import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
     FormsModule,
     ReactiveFormsModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

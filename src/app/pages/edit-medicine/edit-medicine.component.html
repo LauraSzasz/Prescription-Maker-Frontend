@@ -15,7 +15,8 @@
              [(ngModel)]="medicine.chemicalName">
       <div id="chemicalNameHelp" class="form-text">Ex: Omeprazolum</div>
     </div>
-    <select name="administrationMethod" class="form-select" aria-label="administrationMethodSelect" [(ngModel)]="medicine.administrationMethod">
+    <select name="administrationMethod" class="form-select" aria-label="administrationMethodSelect"
+            [(ngModel)]="medicine.administrationMethod">
       <option selected>{{medicine.administrationMethod}}</option>
       <option *ngFor="let method of administrationMethod">{{method}}</option>
     </select>

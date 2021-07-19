@@ -4,11 +4,12 @@
   color: whitesmoke;
 }
 
-#navBarMed{
+#navBarMed {
   color: whitesmoke;
 }
-#navBarMed:hover{
-color:lightblue
+
+#navBarMed:hover {
+  color: lightblue
 }
 
 .navbar-light {

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EditMedicineComponent } from './edit-medicine.component';
 
 describe('EditMedicineComponent', () => {
@@ -8,9 +7,9 @@ describe('EditMedicineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EditMedicineComponent ]
+      declarations: [EditMedicineComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

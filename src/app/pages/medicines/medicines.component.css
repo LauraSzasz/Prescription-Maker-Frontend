@@ -1,4 +1,4 @@
-.container{
+.container {
   margin: auto;
   align-content: center;
 
@@ -8,16 +8,16 @@
   background: #e8eef3;
 }
 
-.icon{
+.icon {
   color: #323434;
 }
 
-#tableRows{
+#tableRows {
   text-align: center;
   margin: auto;
 }
 
-#addButton{
+#addButton {
   margin-top: 1%;
-  margin-left:94%;
+  margin-left: 94%;
 }

@@ -21,7 +21,8 @@ export class EditMedicineComponent implements OnInit {
     private medicineService: MedicinesService,
     private navigation: NavigationService,
     private route: ActivatedRoute,
-  ){}
+  ) {
+  }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];

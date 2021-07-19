@@ -19,10 +19,11 @@ export class AddMedicineComponent {
     private medicineService: MedicinesService,
     private navigation: NavigationService,
     private router: Router
-  ) {}
+  ) {
+  }
 
   onSubmit() {
-    this.medicineService.saveMedicine(this.medicine).subscribe(data =>{
+    this.medicineService.saveMedicine(this.medicine).subscribe(data => {
       console.log(data);
       this.navigation.goToMedicinesPage();
     }, error => console.log(error));

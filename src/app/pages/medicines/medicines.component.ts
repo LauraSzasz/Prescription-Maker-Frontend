@@ -45,7 +45,7 @@ export class MedicinesComponent implements OnInit {
     );
   }
 
-  public openDelete(id:number) {
+  public openDelete(id: number) {
     Swal.fire({
       title: 'Delete medicine',
       text: 'Are you sure you want to delete this entry?',
